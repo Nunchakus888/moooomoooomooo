@@ -1,0 +1,26 @@
+.person {
+  li{
+    background: #1F292F;
+    color: #fff;
+    font-size: 3.5vw;
+    height: 12vw;
+    line-height: 12vw;
+    padding: 0 20px;
+    @extend .tran;
+    span{
+      display: inline-block;
+    }
+    span:nth-child(1){
+      width: 35vw;
+    }
+    span:nth-child(2){
+      width: 35vw;
+    }
+  }
+  li:active{
+    background: #00B4B0;
+  }
+  li:nth-child(2n){
+    background: #111C23;
+  }
+}

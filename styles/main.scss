@@ -1,0 +1,33 @@
+@import './util/util';
+@import 'custom/custom';
+
+*{
+  margin: 0; padding: 0;
+}
+
+body{
+  background: #111C23; color: #fff;
+  font-family: 'Heiti SC' ,'Helvetica', 'HelveticaNeue', 'Droidsansfallback', 'Droid Sans';
+}
+
+#main{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+/*
+  每一个页面的基本样式（每一个新的页面都会被<section/>标签包裹）
+*/
+.page{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #111C23;
+}
+/*
+  过度  0.2 秒
+*/
+.tran{
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}

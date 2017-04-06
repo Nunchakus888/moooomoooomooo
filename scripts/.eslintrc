@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-use-before-define": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-console": 0,
+    "react/prefer-stateless-function": 0,
+    linebreak-style: ["error", "windows"],
+    "arrow-body-style": 0,
+    "react/jsx-no-bind": 0,
+    semi: [2, "never"],
+    comma-dangle: [2, "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "class-methods-use-this": [0, { "exceptMethods": [<...exceptions>] }],
+    "react/forbid-prop-types": [0, {"forbid": ['object']}],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+  }
+}

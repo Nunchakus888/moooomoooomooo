@@ -1,0 +1,71 @@
+.project-describe{
+  color: #fff;
+  h2{
+    text-indent: 25px;
+    padding: 10px 0;
+  }
+  .git{
+    word-wrap:break-word;
+    width: 90vw;
+    display: inline-block;
+    padding: 8px 0;
+  }
+  .textarea{
+    width: 70vw;
+    font-size: 4vw;
+    vertical-align: middle;
+  }
+  p{
+    padding: 10px;
+  }
+  .demoList{
+    padding: 10px;
+    a{
+      color: #00B3AF;
+    }
+  }
+  .ssblock-wrapper button{
+    margin-bottom: 20px;
+  }
+
+  .demoLinks {
+    li{
+      background: #1F292F;
+      color: #fff;
+      font-size: 3.5vw;
+      height: 12vw;
+      line-height: 12vw;
+      padding: 0 20px;
+      @extend .tran;
+      .fa{
+        font-size: $fontSize4_5;
+      }
+      span{
+        display: inline-block;
+      }
+      li span:nth-child(1){
+        width: 5vw;
+      }
+      button{
+        width: 82vw;
+        background: transparent;
+        line-height: 12vw;
+        color: #fff;
+        border: none;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        span{
+          display: inline;
+        }
+      }
+    }
+    li:active{
+      background: #00B4B0 !important;
+    }
+    li:nth-child(2n){
+      background: #111C23;
+    }
+  }
+
+}

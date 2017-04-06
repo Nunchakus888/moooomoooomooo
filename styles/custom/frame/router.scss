@@ -1,0 +1,98 @@
+
+/*
+  react-router 跳转时的动画
+  enter ：是进入的动画
+  leave ：是离开的动画
+*/
+.SSBack-enter {
+  opacity: 0.01;
+}
+.SSBack-enter.SSBack-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  -webkit-animation: SSBackEnter 500ms;
+  z-index: 1;
+  @include keyframes(SSBackEnter) {
+    0% {
+      transform: translate(-10vw, 0); opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0); opacity: 1;
+    }
+  }
+}
+.SSBack-leave {
+  opacity: 2;
+}
+.SSBack-leave.SSBack-leave-active {
+  opacity: 0.01;
+  -webkit-animation: SSBackLeave 500ms;
+  z-index: 2;
+  @include keyframes(SSBackLeave) {
+    0% {
+      transform: translate(0, 0); opacity: 1
+    }
+    100% {
+      transform: translate(100vw, 0); opacity: .5
+    }
+  }
+}
+
+.SSForthcome-enter {
+  opacity: 0.01;
+}
+.SSForthcome-enter.SSForthcome-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  -webkit-animation: SSForthcomeEnter 500ms;
+  z-index: 2;
+  @include keyframes(SSForthcomeEnter) {
+    0% {
+      transform: translate(100vw, 0); opacity: 0
+    }
+    100% {
+      transform: translate(0, 0); opacity: 1
+    }
+  }
+}
+.SSForthcome-leave {
+  opacity: 1;
+}
+.SSForthcome-leave.SSForthcome-leave-active {
+  opacity: 0.01;
+  -webkit-animation: SSForthcomeLeave 500ms;
+  z-index: 1;
+  @include keyframes(SSForthcomeLeave) {
+    0% {
+      transform: translate(0, 0); opacity: 1;
+    }
+    100% {
+      transform: translate(-10vw, 0); opacity: .5;
+    }
+  }
+}
+
+.ssblock-wrapper{
+  padding: 0 20px;
+
+  .ss-button:active {
+    background: #eee;
+  }
+  .ss-button{
+    -webkit-appearance: none;
+    background: #fff;
+    width: 100%;
+    appearance: none;
+    border-radius: 4px;
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+    height: 41px;
+    outline: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.ss-dataList {
+  li{
+    background: #1F292F;
+    color: #fff;
+    font-size: 3.5vw;
+    height: 12vw;
+    line-height: 12vw;
+    padding: 0 20px;
+    @extend .tran;
+    .fa{
+      font-size: $fontSize4_5;
+    }
+    span{
+      display: inline-block;
+    }
+    li span:nth-child(1){
+      width: 5vw;
+    }
+    a{
+      width: 83vw;
+      display: inline-block;
+      text-align: center;
+      span{
+        display: inline;
+      }
+    }
+  }
+
+  li:active{
+    background: #00B4B0 !important;
+  }
+  li:nth-child(2n){
+    background: #111C23;
+  }
+}

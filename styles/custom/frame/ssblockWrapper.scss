@@ -1,0 +1,31 @@
+
+.ssblock-wrapper{
+  padding: 0 20px;
+  .ss-button:active {
+    background: #eee;
+  }
+  .ss-button{
+    @extend .tran;
+    -webkit-appearance: none;
+    background: #fff;
+    width: 100%;
+    appearance: none;
+    border-radius: 4px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    font-size: 18px;
+    height: 41px;
+    outline: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    .fa{
+      display: inline-block;
+      float: left;
+      padding-left: 15px;
+      color: $color_blue;
+    }
+  }
+}
