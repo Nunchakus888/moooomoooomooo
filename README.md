@@ -2,9 +2,6 @@
 
 ##### 本文将介绍 StartKit 的下载方式和基本的用法。
 ----
-#### 从git上clone该项目
-  git目录地址：http://git.sumscope.com:7990/scm/mw/reactstartkit.git
-
 #### 简介
 ##### 项目目录
 ```
